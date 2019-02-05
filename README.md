@@ -38,7 +38,7 @@ python3.6 j2_create_conf.py -i j2_local_write.xlsx -t template.j2 -o test.txt
 
 •	Tab sheet name, no dependence. 
 
-•	Do not add {{}} brackets to the excel file. 
+•	Do not use {{}} brackets within the excel file. 
 
 •	Spaces are permitted under the var_value column.
 
@@ -49,6 +49,7 @@ python3.6 j2_create_conf.py -i j2_local_write.xlsx -t template.j2 -o test.txt
 
 Example configuration file in which the variables will be applied and ultimately, applied to a device.  
 
+Within the template file, use {{'braces' or 'curly brackets}} to define a {{variable_name}}.   
 
 router ospf {{ospf_process}}
 
