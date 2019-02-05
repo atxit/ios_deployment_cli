@@ -15,17 +15,17 @@ re, pandas, sys, numpy, pyexcel, copy, jinja2 and os
 
 You will need the following files:
 
-1)	Input excel file, example has been provided. The file format must be either .xls or xlsx
-2)	Template.j2, example has been provided. The file must end in .j2. 
-3)	Output can either support no file extension or a file extension. I prefer a file extension for reading on my local PC. 
+1)	Input excel file: screen snip provided. The file must be either in a .xls or xlsx format.  
+2)	Template.j2: example has been provided. The file must end in '.j2' extension.  
+3)	Output file: can either support no file extension or a file extension, that's up to you. I prefer a file extension for reading on my local PC. 
 
 #System Arguments
 
 -i (input) inputfile.xls
--o (output) router.txt
 -t (template) template
+-o (output) router.txt
 
-All three System Arguments must be supplied otherwise the python code will generate an error. 
+All three system arguments must be supplied otherwise the python code will generate an error. 
 
 python3.6 j2_create_conf.py -i j2_local_write.xlsx -t template.j2 -o test.txt
 
@@ -38,11 +38,11 @@ python3.6 j2_create_conf.py -i j2_local_write.xlsx -t template.j2 -o test.txt
 
 •	Tab sheet name, no dependence. 
 
-•	Do not add {{}} brackets to the excel 
+•	Do not add {{}} brackets to the excel file. 
 
-•	Spaces are permitted under the var_value column
+•	Spaces are permitted under the var_value column.
 
-•	Spaces are not permitted under the var_name column
+•	Spaces are not permitted within the var_name column.
 
 
 #Template file
