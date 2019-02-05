@@ -1,0 +1,5 @@
+router ospf {{ospf_process}}
+network {{ospf_net}} area {{ospf_area}}
+
+router bgp {{bgp_asn}}
+neighbor {{neighbor_1}} remote-as {{asn_65000}}
