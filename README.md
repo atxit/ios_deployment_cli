@@ -73,3 +73,16 @@ Before the python code begins the process of applying the variables (through the
 
 The output file is written to the locations listed under the system arguments -o.  
 
+Result:
+
+router ospf 1
+
+network 10.0.0.0 0.255.255.255 area 0
+
+router bgp 65000
+
+neighbor 192.168.10.1 remote-as 65000
+
+interface loop 0
+
+description this is a test
