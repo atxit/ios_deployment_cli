@@ -5,7 +5,6 @@ import pandas as pd
 import sys
 import numpy
 import pyexcel as pe
-import copy
 from jinja2 import Environment, FileSystemLoader
 import os
 
