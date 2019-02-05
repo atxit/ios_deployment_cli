@@ -100,9 +100,6 @@ def main():
 			# Need a valid input file after the -t argument
 				print("\nHalted - No template file provided\n\n")
 				raise SystemExit(0)
-		if argument == '-s':
-			if (index) < len(sys.argv):
-				send = True
 	file_check(input_file,template)
 	values,df_var_index_list = input(input_file)
 	check_vars(df_var_index_list,template)
