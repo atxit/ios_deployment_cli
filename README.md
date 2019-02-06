@@ -67,7 +67,7 @@ Within the template file, use {{'braces' or 'curly brackets}} to define a {{vari
 #Variable matching
 
 
-Before the python code begins the process of applying the variables (through the jinja2 file), it validates that the supplied information from the excel spreadsheet aligns with the template files. All variables names must exist in both the template and the spreadsheet otherwise, the python code will stop with an error. 
+Before the python code begins the process of applying the variables (through the jinja2 file), it validates that the supplied information from the excel spreadsheet aligns with the template file. All variables must exist in both the template and the spreadsheet otherwise, the python code will stop with an error. 
 
 #Output file
 
