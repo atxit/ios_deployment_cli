@@ -72,7 +72,7 @@ Before the python code begins the process of applying the variables (through the
 #Output file
 
 
-  The output file is written to the locations listed under the system arguments -o.  
+  The output file is written to the location listed under the system arguments -o.  
 
 Result:
 
