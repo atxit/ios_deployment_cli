@@ -32,17 +32,17 @@ python3.6 j2_create_conf.py -i j2_local_write.xlsx -t template.j2 -o test.txt
 #XLS/XLSX input file
 
 
-•	Var Names: need to be unique, if a duplicate is found, the code will stop with an error. 
+    •	Var Names: need to be unique, if a duplicate is found, the code will stop with an error. 
 
-•	Var Values: value to be applied to the jinja2 template and ultimately, the output file. 
+    •	Var Values: value to be applied to the jinja2 template and ultimately, the output file. 
 
-•	Tab sheet name, no dependence. 
+    •	Tab sheet name, no dependence. 
 
-•	Do not use {{}} brackets within the excel file. 
+    •	Do not use {{}} brackets within the excel file. 
 
-•	Spaces are permitted under the var_value column.
+    •	Spaces are permitted under the var_value column.
 
-•	Spaces are not permitted within the var_name column.
+    •	Spaces are not permitted within the var_name column.
 
 
 #Template file
@@ -51,17 +51,17 @@ Example configuration file in which the variables will be applied and ultimately
 
 Within the template file, use {{'braces' or 'curly brackets}} to define a {{variable_name}}.   
 
-router ospf {{ospf_process}}
+    router ospf {{ospf_process}}
 
-network {{ospf_net}} area {{ospf_area}}
+    network {{ospf_net}} area {{ospf_area}}
 
-router bgp {{bgp_asn}}
+    router bgp {{bgp_asn}}
 
-neighbor {{neighbor_1}} remote-as {{asn_65000}}
+    neighbor {{neighbor_1}} remote-as {{asn_65000}}
 
-interface loop 0
+    interface loop 0
 
-description {{lb0_description}}
+    description {{lb0_description}}
 
 
 #Variable matching
