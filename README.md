@@ -1,6 +1,6 @@
 # Jinja2 using MS excel
 
-This is a tool which I created to assist in building Cisco configuration files by using jinja2. Using a jinja2 template to create configuration files is nothing new however, I’ve adapted it to read from a MS spreadsheet, so the user does not need to access the python code. Most examples that I’ve seen require that the variables need to be manually added directly into a python dictionary, then filters through jinja2. With this python code, variables are inputted using a spreadsheet. 
+This is a tool which I created to assist in building Cisco configuration files by using jinja2. Using a jinja2 template to create configuration files is nothing new however, I’ve adapted it to read from a MS spreadsheet, so the user does not need to access the python code. Most examples that I’ve seen require that the variables are added manually directly into a python code dictionary, then filtered through jinja2. With this python code, variables are inputted using a spreadsheet. 
 
 #Supported versions:
 
