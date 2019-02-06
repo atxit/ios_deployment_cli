@@ -1,11 +1,11 @@
 # Jinja2 using MS excel
 
-This is a tool that I created to build Cisco configuration files using a jinja2 template. Using a jinja2 template to create configuration files is nothing new however, I’ve adapted it to read from a MS spreadsheet, so the user does not need to access the python code. Most examples that I’ve seen require the variables to be added (manually) to a python dictionary, then filters through jinja2. With this code, variables are inputted using a spreadsheet. 
+This is a tool which I created to assist in building Cisco configuration files by using jinja2. Using a jinja2 template to create configuration files is nothing new however, I’ve adapted it to read from a MS spreadsheet, so the user does not need to access the python code. Most examples that I’ve seen require that the variables need to be manually added directly into a python dictionary, then filters through jinja2. With this python code, variables are inputted using a spreadsheet. 
 
-Supported versions:
+#Supported versions:
 
-Python3.6 (tested)
-Python 2.7.15 (tested)
+Python3.6 
+Python 2.7.15 
 
 Required standard and non standard libraries and modules
 
@@ -13,11 +13,11 @@ re, pandas, sys, numpy, pyexcel, copy, jinja2 and os
 
 #How to use
 
-You will need the following files:
+  You will need the following files:
 
-1)	Input excel file: screen snip provided. The file must be either in a .xls or xlsx format.  
-2)	Template.j2: example has been provided. The file must end in '.j2' extension.  
-3)	Output file: can either support no file extension or a file extension, that's up to you. I prefer a file extension for reading on my local PC. 
+  1)	Input excel file: screen snip provided. The file must be either in a .xls or xlsx format.  
+  2)	Template.j2: example has been provided. The file must end in '.j2' extension.  
+  3)	Output file: can either support no file extension or a file extension, that's up to you. I prefer a file extension for reading on       my local PC. 
 
 #System Arguments
 
