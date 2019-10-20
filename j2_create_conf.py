@@ -47,10 +47,10 @@ def check_vars(df_var_index_list,template):
 	extra_var_in_excel = [i for i in df_var_index_list if i not in vars_from_template]
 	if len(extra_var_in_template) > 0:
 		print('{} was found in j2 template but not in excel sheet, they must align, stopping...'.format(extra_var_in_template))
-		exit()
+		sys.exit()
 	if len(extra_var_in_excel) > 0:
 		print('{} was found in excel sheet but not j2 template, they must align, stopping...'.format(extra_var_in_excel))
-		exit()
+		sys.exit()
 	print('All checks are complete')
 
 def create_config(template, values, file_output):
